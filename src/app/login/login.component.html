@@ -1,0 +1,37 @@
+<simple-notifications [options]="options"></simple-notifications>
+<div >
+	<div class="login_box">
+		<form #f="ngForm" (ngSubmit)="login(f)">
+			<div class="form-group">
+			<label for="userName">User Name</label>
+			<input type="text" ngModel name="email" id="userName" class="form-control" >
+			</div>
+			<div class="form-group">
+			<label for="Password">Password</label>
+			<input type="password" ngModel name="password" id="Password" class="form-control" >
+			</div>
+			<button type="submit" class="btn btn-primary">Login</button>
+		</form>
+	</div>
+</div>
+
+
+<!-- <div class="login-page animate">
+	<div class="row">
+		<div class="col-lg-4 col-lg-offset-4">
+        	<img src="assets/images/flat-avatar.png" class="user-avatar" />
+			<h1>Ani Angular2 <small>Free Edition</small></h1>
+			<form role="form">
+				<div class="form-content">
+					<div class="form-group">
+						<input type="text" class="form-control input-underline input-lg" id="" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control input-underline input-lg" id="" placeholder="Password">
+					</div>
+				</div>
+				<a class="btn rounded-btn" [routerLink]="['dashboard', 'home']"> Log in </a>
+			</form>
+		</div>	
+	</div>
+</div> -->
